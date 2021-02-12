@@ -1,0 +1,29 @@
+<h2>My Result</h2>
+
+<a class="btn btn-primary" href="#" role="button">New</a>
+<br><br>
+
+<table class="table">
+  <thead class="thead-light">
+  <tr>
+    <th scope="col">Date</th>
+    <th scope="col">Distance in metres</th>
+    <th scope="col">Time</th>
+    <th scope="col">Average speed</th>
+    <th scope="col">Options</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let i of infoObj">
+    <td>{{i.date}}</td>
+    <td>{{i.distance}}</td>
+    <td>{{i.time}}</td>
+    <td>{{i.distance / i.time}}</td>
+    <td>
+      <a>Edit </a>
+      <a>Delete</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+

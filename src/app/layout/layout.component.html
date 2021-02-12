@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="column left">
+    <app-addrecord (myeventEmit)="updateArray($event)"></app-addrecord>
+  </div>
+
+  <div class="column right">
+    <app-myresults [infoObj]="infoObj"></app-myresults>
+  </div>
+</div>
